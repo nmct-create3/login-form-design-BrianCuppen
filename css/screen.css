@@ -507,6 +507,7 @@ box-shadow: 0 0 0 1px rgb(var(--global-color-transparent))
     font-size: medium;
     font-weight: bold;
     line-height: 21px;
+    margin-top: 12px;
 }
 .c-card__footer{
     padding : 12px;
@@ -565,8 +566,8 @@ gap : 8px;
 */
 
 .c-label {
-    font-size: 14px;
-line-height: 16px;
+    font-size: calc(var(--global-whitespace) - 2);
+line-height: var(--global-whitespace);
 margin-bottom: 8px;
 color: var(--global-color-label);
 }
@@ -589,13 +590,13 @@ margin-left: var(--global-whitespace-sm);
     color: white;
     width: 100%;;
     background-color: var(--global-color-alpha);
-    padding: calc(var(--global-whitespace) - 12);
+    padding: calc(var(--global-whitespace) - 12) var(--global-whitespace-lg);   
     line-height : var(--global-whitespace-lg);
     /* border stuff */
     border-style: solid;
     border-color: var(--global-color-alpha-dark);
     border-width: 1px;
-    border-radius: var(--global-baseline);
+    border-radius: 3px;
     outline: none;
 }
 
